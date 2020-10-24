@@ -1,14 +1,14 @@
 version: "3.8"
 
 services:
-  #   atm-web-frontend:
-  #     build:
-  #         context: ./atm-web-frontend
-  #     ports:
-  #         - "9000:8090"
-  #     depends_on:
-  #         - atm-web-backend
-  #         - atm-db
+    atm-web-frontend:
+      build:
+          context: ./atm-web-frontend
+      ports:
+          - "9000:8090"
+      depends_on:
+          - atm-web-backend
+          - atm-db
 
   atm-web-backend:
     build:
